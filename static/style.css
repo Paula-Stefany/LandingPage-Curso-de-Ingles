@@ -5,11 +5,14 @@
     --font-small-medium: 1.8rem;
     --font-medium: 2rem;
     --font-large: 6.2rem;
+    --font-body: 1.2rem;
     --primary:  #f5f5d9;
     --white: #ffffff;
     --blue: #010158;
-    --brown: #491111e9;
+    --brown: #3e0e0ee9;
+    --ligth-brown: #572e2e;
     --red: #f62222;
+    --gold: #caac27;
 }
 
 html{
@@ -62,15 +65,13 @@ body{
 
 .header-navigation ul li{
     list-style: none;
-}
-
-.header-navigation ul li{
     padding: 0 0.8rem;
+    transition: all 0.2s;
+    border-radius: 0.8rem;
 }
 
 .header-navigation ul li:hover{
     background-color: var(--white);
-    border-radius: 0.8rem;
 }
 .header-navigation ul li a:hover{
     color: var(--red);
@@ -99,7 +100,7 @@ body{
     color: var(--white);
     font-size: var(--font-large);
     font-family: var(--font-poppins);
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.8rem;
     filter: drop-shadow(2px 1px 1px var(--red));
     text-transform: uppercase;
     font-weight: 900;
@@ -126,9 +127,8 @@ body{
     color: var(--white);
     font-family: var(--font-poppins);
     font-size: var(--font-small);
-    width: 90%;
-    padding: 0.8rem;
-    margin-bottom: 1rem;
+    width: 85%;
+    margin-bottom: 2rem;
 }
 
 .banner-button{
@@ -141,12 +141,13 @@ body{
     font-family: var(--font-poppins);
     font-size: var(--font-small);
     filter: drop-shadow(2px 1.6px 3px var(--brown));
+    font-weight: 500;
+    transition: 0.2s;
 }
 
 .banner-button:hover{
     background-color: var(--white);
     color: var(--red);
-    font-weight: 600;  
 }
 
 /* BANNER IMAGE */
@@ -159,4 +160,61 @@ body{
     width: 75%;
     margin: auto;
     
+}
+
+/* CARDS */
+.cards{
+    background-color: car(--primary);
+    margin: 2rem 0;
+}
+
+/* CARD TITLE */
+.card-title{
+    font-family: var(--font-poppins);
+    color: var(--ligth-brown);
+    font-size: var(--font-small);
+    text-align: center;
+}
+
+.card-title span{
+    color: var(--gold)
+}
+
+/* CARD CONTENT */
+.card-content{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.card{
+    width: 110px;
+    height: 80px;
+    margin: 0.5rem 0.5rem;
+}
+
+.card-logo{
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: var(--gold);
+    height: 55px;
+}
+
+.card-text{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 25px;
+    font-family: var(--font-roboto);
+    font-weight: 500;
+    font-size: var(--font-body);
+    color: var(--ligth-brown);
 }
