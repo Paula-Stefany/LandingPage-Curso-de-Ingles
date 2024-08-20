@@ -162,42 +162,33 @@ body{
     
 }
 
-/* CARDS */
-.cards{
+/* ADDITIONAL INFO */
+.additional-info{
     background-color: car(--primary);
-    margin: 2rem 0;
+    background: linear-gradient(to bottom, var(--blue) 50%, var(--white) 50%);
+
 }
 
-/* CARD TITLE */
-.card-title{
-    font-family: var(--font-poppins);
-    color: var(--ligth-brown);
-    font-size: var(--font-small);
-    text-align: center;
-}
-
-.card-title span{
-    color: var(--gold)
-}
-
-/* CARD CONTENT */
-.card-content{
+/* ADDTIONAL CONTENT */
+.additional-content{
+    background-color: var(--primary);
     width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 1rem;
+    border-radius: 3rem;
 }
 
-.card{
+.additional-card{
     width: 110px;
     height: 80px;
     margin: 0.5rem 0.5rem;
 }
 
-.card-logo{
-    font-size: 36px;
+.additional-logo{
+    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,7 +197,7 @@ body{
     height: 55px;
 }
 
-.card-text{
+.additional-text{
     padding: 0.5rem;
     display: flex;
     justify-content: center;
