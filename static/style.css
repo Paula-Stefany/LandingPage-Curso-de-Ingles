@@ -12,7 +12,7 @@
     --brown: #3e0e0ee9;
     --red: #f62222;
     --gray: #808080;
-    --dark-gray: #363636
+    --dark-gray: #363636;
 }
 
 html{
@@ -151,12 +151,14 @@ body{
 }
 
 /* BANNER IMAGE */
-.banner-image{
+.banner-image,
+.content-image{
     width: 50%;
     display: flex;
 }
 
-.banner-img{
+.banner-img,
+.content-img{
     width: 75%;
     margin: auto;
 }
@@ -168,7 +170,6 @@ body{
 
 }
 
-/* ADDTIONAL CONTENT */
 .additional-content{
     background-color: var(--primary);
     width: 90%;
@@ -187,7 +188,7 @@ body{
 }
 
 .additional-logo{
-    font-size: 30px;
+    font-size: 28px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,7 +205,6 @@ body{
     align-content: center;
     height: 25px;
     font-weight: 500;
-    font-size: var(--font-body);
     font-family: var(--font-poppins);
     color: var(--gray);
 }
@@ -212,15 +212,8 @@ body{
 .content{
     display: flex;
     width: 85%;
-    margin: 0.9rem auto;
+    margin: 0 auto;
     padding: 7rem 0;
-}
-
-.content-image{
-    width: 50%;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
 }
 
 .content-text{
@@ -236,18 +229,81 @@ body{
 
 .content-sub-subtitle{
     color: var(--dark-gray);
+    font-family: var(--font-poppins);
+    font-size: var(--font-body);
 }
 
-.content-description{
+.content-description,
+.for-what-description{
     font-family: var(--font-poppins);
     color: var(--gray);
     padding: 1rem 0;
+    width: 90%;
 }
 
-.content-img{
-    width: 75%;
-}
-
-.content-text ul li{
+.content-text ul li,
+.for-what-text ul li{
     list-style: none;
+}
+
+/* FOR-WHAT SECTION */
+
+.for-what-section{
+    width: 100%;
+    background-color: var(--blue);
+    padding: 2rem 0;
+}
+
+.for-what-content{
+    width: 85%;
+    background-color: var(--primary);
+    display: flex;
+    margin: auto;
+    padding: 5rem 8rem;
+    border-radius: 2rem;
+}
+
+.for-what-title{
+    text-align: center;
+    color: var(--blue);
+    color: var(--blue);
+    font-family: var(--font-poppins);
+    font-size: var(--font-medium);
+    margin-bottom: 3.6rem;
+}
+
+.for-what-title span{
+    color: var(--red);
+}
+
+.for-what-box{
+    display: flex;
+}
+
+.for-what-logo{
+    border: 1.5px solid var(--red);
+    background-color: var(--white);
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    text-align: center;
+    align-content: center;
+    margin-right: 1rem;
+}
+
+.for-what-logo i{
+    color: var(--dark-gray);
+    font-size: 15px;
+}
+
+.for-what-subtitle{
+    color: var(--dark-gray);
+    font-family: var(--font-poppins);
+    font-size: var(--font-body);
+    align-content: center;
+}
+
+.for-what-text ul {
+    columns: 2;
+    column-gap: 3rem;
 }
