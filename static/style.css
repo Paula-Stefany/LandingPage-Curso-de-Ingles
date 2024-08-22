@@ -315,30 +315,31 @@ body{
 .testimonials{
     width: 100%;
     background-color: var(--white);
-    padding: 4rem 0;
+    padding: 7rem 0;
 }
 
 .testimonial-content{
     background-color: var(--white);
     width: 85%;
-    padding: 3rem 0;
+    padding: 1rem 0;
     display: flex;
     margin: auto;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
 }
 
 .testimonial-card{
-    width: 200px;
-    height: 250px;
+    width: 180px;
+    height: 230px;
     margin: 0.5rem 0.5rem;
     background-color: white;
-    box-shadow: 0px 4px 7px var(--light-blue);
+    box-shadow: 0px 3px 7px var(--light-blue);
+    border-radius: 15px;
 }
 
 .testimonial-card:hover{
-    box-shadow: 0px 4px 7px var(--light-red);
+    box-shadow: 0px 3px 7px var(--light-red);
 }
 
 .testimonial-title{
