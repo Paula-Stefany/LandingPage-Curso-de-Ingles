@@ -265,8 +265,7 @@ body{
     border-radius: 2rem;
 }
 
-.for-what-title,
-.testimonials-title{
+.for-what-title{
     text-align: center;
     color: var(--blue);
     font-family: var(--font-poppins);
@@ -318,32 +317,48 @@ body{
     padding: 7rem 0;
 }
 
+.testimonials-title{
+    text-align: center;
+    color: var(--blue);
+    font-family: var(--font-poppins);
+    font-size: var(--font-medium);
+}
+
+.testimonial-title-description{
+    text-align: center;
+    font-family: var(--font-poppins);
+    font-size: var(--font-small);
+    color: var(--gray);
+    font-weight: 400;
+}
+
 .testimonial-content{
     background-color: var(--white);
     width: 85%;
-    padding: 1rem 0;
+    padding-top: 1.2rem;
     display: flex;
     margin: auto;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 0.5rem;
 
 }
 
 .testimonial-card{
-    width: 180px;
-    height: 230px;
-    margin: 0.5rem 0.5rem;
+    width: 40%;
+    padding: 0.8rem 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
     background-color: white;
-    box-shadow: 0px 3px 7px var(--light-blue);
-    border-radius: 15px;
+    box-shadow: 0px 1px 6px var(--light-blue);
 }
 
 .testimonial-card:hover{
-    box-shadow: 0px 3px 7px var(--light-red);
+    box-shadow: 0px 1px 6px var(--light-red);
 }
 
 .testimonial-title{
-    height: 20%;
     text-align: center;
     align-content: center;
     color: var(--dark-gray);
@@ -352,9 +367,15 @@ body{
 }
 
 .testimonial-description{
-    height: 70%;
-    padding: 0 2rem;
     font-family: var(--font-poppins);
     color: var(--gray)
 }
 
+.stars{
+    text-align: center;
+    color: var(--red);
+}
+
+.last-star{
+    color: var(--gray);
+}
