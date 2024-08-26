@@ -5,7 +5,7 @@
     --font-small-medium: 1.8rem;
     --font-medium: 2rem;
     --font-large: 6.2rem;
-    --font-body: 1.2rem;
+    --font-body: 1rem;
     --primary:  #f5f5d9;
     --white: #ffffff;
     --blue: #010158;
@@ -169,7 +169,7 @@ body{
 
 /* ADDITIONAL INFO */
 .additional-info{
-    background-color: car(--primary);
+    background-color: var(--primary);
     background: linear-gradient(to bottom, var(--blue) 50%, var(--white) 50%);
 
 }
@@ -180,7 +180,7 @@ body{
     margin: auto;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 1rem;
     border-radius: 3rem;
 }
@@ -210,6 +210,7 @@ body{
     height: 25px;
     font-weight: 500;
     font-family: var(--font-poppins);
+    font-size: var(--font-body);
     color: var(--gray);
 }
 
@@ -234,12 +235,12 @@ body{
 .content-sub-subtitle{
     color: var(--dark-gray);
     font-family: var(--font-poppins);
-    font-size: var(--font-body);
+    font-size: var(--font-small);
 }
 
-.content-description,
-.for-what-description{
+.content-description{
     font-family: var(--font-poppins);
+    font-size: var(--font-body);
     color: var(--gray);
     padding: 1rem 0;
     width: 90%;
@@ -263,8 +264,10 @@ body{
     background-color: var(--primary);
     display: flex;
     margin: auto;
-    padding: 5rem 8rem;
+    padding: 5rem 3rem;
     border-radius: 2rem;
+    justify-content: center;
+    
 }
 
 .for-what-title{
@@ -279,19 +282,32 @@ body{
     color: var(--red);
 }
 
+
 .for-what-box{
     display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.logo-content{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    justify-content: center;
+    margin-right: 1rem;
 }
 
 .for-what-logo{
     border: 1.5px solid var(--red);
     background-color: var(--white);
-    width: 35px;
-    height: 35px;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 100%;
-    text-align: center;
-    align-content: center;
-    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .for-what-logo i{
@@ -302,13 +318,21 @@ body{
 .for-what-subtitle{
     color: var(--dark-gray);
     font-family: var(--font-poppins);
-    font-size: var(--font-body);
+    font-size: var(--font-small);
     align-content: center;
+}
+
+.for-what-description{
+    font-family: var(--font-poppins);
+    font-size: var(--font-body);
+    color: var(--gray);
+    padding: 1rem 0;
+    width: 100%;
 }
 
 .for-what-text ul {
     columns: 2;
-    column-gap: 3rem;
+    gap: 6rem;
 }
 
 /* TESTIMONIALS */
@@ -348,11 +372,12 @@ body{
 
 .testimonial-card{
     width: 40%;
-    padding: 1rem 1rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     background-color: white;
     box-shadow: 0px 1px 6px var(--light-blue);
+    gap: 1rem
 }
 
 .testimonial-card:hover{
@@ -360,25 +385,20 @@ body{
 }
 
 .testimonial-title{
-    height: 15%;
     text-align: center;
     align-content: center;
     color: var(--dark-gray);
     font-family: var(--font-poppins);
-    font-size: var(--font-body);
+    font-size: var(--font-small);
 }
 
 .testimonial-description{
-    height: 70%;
     font-family: var(--font-poppins);
+    font-size: var(--font-body);
     color: var(--gray);
-    margin-top: 0.7rem;
-    margin-bottom: 0.2rem;
 }
 
 .stars{
-    height: 15%;
-    padding-top: 0.6rem;
     text-align: center;
     color: var(--red);
     align-content: center;
@@ -449,4 +469,194 @@ body{
 .contact-img{
     width: 30%;
     margin: auto;
+}
+
+/* RESPONSIBLE */
+
+@media only screen and (max-width: 500px){
+    .additional-card:nth-of-type(n+3) {
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px){
+    .additional-card:nth-of-type(n+4) {
+        display: none;
+    }
+}
+@media only screen and (max-width: 800px){
+    .additional-card:nth-of-type(n+5) {
+        display: none;
+    }
+}
+@media only screen and (max-width: 900px){
+    .additional-card:nth-of-type(n+6) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    :root{
+        --font-small: 1.8rem;
+        --font-small-medium: 4rem;
+        --font-medium: 2.5rem;
+        --font-large: 6.2rem;
+        --font-body: 1.6rem;
+    }
+
+    .banner-image,
+    .contact-image{
+        display: none;
+    }
+
+    .banner-text{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+    }
+
+    .banner-title{
+        text-align: center;
+    }   
+    
+    .banner-description{
+        text-align: center;
+    }
+
+    .banner-button{
+        text-align: center;
+    }
+    
+    .content{
+        display: block;
+    }
+
+    .content-image{
+        width: 90%;
+        margin: auto;
+    }
+
+    .content-img{
+        width: 80%;
+    }
+
+
+    .content-text{
+        width: 90%;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .content-subtitle{
+        text-align: center;
+        margin-top: 5rem;
+        padding: 2rem 0;
+    }
+
+    .content-sub-subtitle{
+        text-align: center;
+        margin-top:  2rem;
+    }
+
+    .content-description{
+        text-align: center;
+        width: 100%;
+    }
+
+    .additional-logo{
+        font-size: 3.5rem;
+    }
+
+    .testimonial-title-description{
+        margin-bottom: 2rem;
+    }
+
+    .testimonial-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .testimonial-card{
+        width: 80%;
+        padding: 2.5rem 2rem;
+        gap: 0.8rem;
+    }
+
+    .testimonial-description{
+        text-align: center;
+    }
+
+    .stars{
+        font-size: 1.5rem;
+    }
+
+    .contact{
+        width: 90%;
+        margin: auto;
+    }
+
+    .contact-box{
+        text-align: center;
+    }
+
+    .contact-title{
+        text-align: center;
+    }
+
+    .for-what-content{
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    .for-what-box{
+        margin-top: 2rem;
+    }
+
+
+    .for-what-description{
+        width: 100%
+    }
+
+    .for-what-content{
+        width: 95%;
+    }
+
+    .for-what-text ul {
+        columns: 1;
+    }
+
+    .logo-content{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        width: 4rem;
+        height: 4rem;
+        justify-content: center;
+    }
+
+    .for-what-logo{
+        width: 4rem;
+        height: 4rem;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 1025px){
+    :root{
+        --font-small: 1.5rem;
+        --font-small-medium: 2rem;
+        --font-medium: 2.2rem;
+        --font-large: 6.1rem;
+        --font-body: 1.1rem;
+    }
+    
 }
