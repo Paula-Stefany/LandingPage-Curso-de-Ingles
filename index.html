@@ -14,13 +14,13 @@
 <body>
     <!-- HEADER -->
     <header class="header" id="english-here">
-        <!-- HEADER CHILD 1 -->
+        <!-- LOGO HEADER CHILD 1 -->
         <div class="header-logo">
             <a href="#english-here" >English <span>Here</span></a>
         </div>
-        <!-- HEADER CHILD 2 -->
-        <nav class="header-navigation">
-            <ul>
+        <!-- MENU HEADER CHILD 2 -->
+        <nav class="header-navigation" id="nav">
+            <ul id="nav-items">
                 <li><a href="#content" class="nav-item">Content
                 </a></li>
                 <li><a href="#english-for-what" class="nav-item">English for what?
@@ -29,6 +29,12 @@
                 <li><a href="#contact" class="nav-item">Contact Us</a></li>
             </ul>
         </nav>
+        <!-- MENU MOBILE -->
+         <div class="bars" id="bars">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+         </div>
     </header>
     <main>
         <!--BANNER SECTION-->
@@ -107,12 +113,12 @@
         </section>
 
         <!-- CONTENT SECTION -->
-        <section class="course-content" id="content">
+        <section class="course-content">
             <div class="content">
                 <aside class="content-image">
                     <img alt="real-time-colaboration-picture" src="img/undraw_real_time_collaboration_c62i.svg" class="content-img">
                 </aside>
-                <article class="content-text">
+                <article class="content-text" id="content">
                     <h2 class="content-subtitle">Content</h2>
                     <ul>
                         <li>
@@ -279,4 +285,5 @@
          </footer>
     </main>
 </body>
+    <script src="js/script.js"></script>
 </html>
