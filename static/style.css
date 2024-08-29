@@ -4,7 +4,7 @@
     --font-small: 1.8rem;
     --font-small-medium: 2.2rem;
     --font-medium: 2.4rem;
-    --font-large: 6.6rem;
+    --font-large: 6.8rem;
     --font-body: 1.4rem;
     --primary:  #f5f5d9;
     --white: #ffffff;
@@ -92,7 +92,7 @@ body{
     display: flex;
     width: 85%;
     margin: auto;
-    padding: 10rem 0;
+    padding: 12rem 0;
 }
 
 /* BANNER TEXT */
@@ -215,11 +215,16 @@ body{
 }
 
 /* CONTENT */
+
+.course-content{
+    width: 100%;
+}
+
 .content{
     display: flex;
     width: 85%;
     margin: 0 auto;
-    padding: 10rem 0;
+    padding: 12rem 0;
 }
 
 .content-text{
@@ -257,7 +262,7 @@ body{
 .for-what-section{
     width: 100%;
     background-color: var(--blue);
-    padding: 4.1rem 0;
+    padding: 6.1rem 0;
 }
 
 .for-what-content{
@@ -265,7 +270,7 @@ body{
     background-color: var(--primary);
     display: flex;
     margin: auto;
-    padding: 6rem 3rem;
+    padding: 8rem 4rem;
     border-radius: 2rem;
     justify-content: center;
     
@@ -294,8 +299,8 @@ body{
     display: flex;
     align-items: center;
     align-content: center;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 4rem;
+    height: 4rem;
     justify-content: center;
     margin-right: 1rem;
 }
@@ -303,8 +308,8 @@ body{
 .for-what-logo{
     border: 1.5px solid var(--red);
     background-color: var(--white);
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -313,7 +318,7 @@ body{
 
 .for-what-logo i{
     color: var(--dark-gray);
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .for-what-subtitle{
@@ -333,7 +338,7 @@ body{
 
 .for-what-text ul {
     columns: 2;
-    gap: 6rem;
+    gap: 8rem;
 }
 
 /* TESTIMONIALS */
@@ -341,7 +346,7 @@ body{
 .testimonials{
     width: 100%;
     background-color: var(--white);
-    padding: 10rem 0;
+    padding: 12rem 0;
 }
 
 .testimonials-title{
@@ -373,7 +378,7 @@ body{
 
 .testimonial-card{
     width: 40%;
-    padding: 1rem;
+    padding: 1.3rem;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -403,7 +408,7 @@ body{
     text-align: center;
     color: var(--red);
     align-content: center;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .last-star{
