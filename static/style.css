@@ -1,11 +1,11 @@
 :root{
     --font-poppins: "Poppins", sans-serif;
     --font-roboto: "Roboto", sans-serif;
-    --font-small: 1.8rem;
-    --font-small-medium: 2.2rem;
-    --font-medium: 2.4rem;
-    --font-large: 6.8rem;
-    --font-body: 1.4rem;
+    --font-small: 1.9rem;
+    --font-small-medium: 2.3rem;
+    --font-medium: 2.5rem;
+    --font-large: 7rem;
+    --font-body: 1.5rem;
     --primary:  #f5f5d9;
     --white: #ffffff;
     --blue: #010158;
@@ -92,7 +92,7 @@ body{
     display: flex;
     width: 85%;
     margin: auto;
-    padding: 12rem 0;
+    padding: 13rem 0;
 }
 
 /* BANNER TEXT */
@@ -224,7 +224,7 @@ body{
     display: flex;
     width: 85%;
     margin: 0 auto;
-    padding: 12rem 0;
+    padding: 13rem 0;
 }
 
 .content-text{
@@ -262,7 +262,7 @@ body{
 .for-what-section{
     width: 100%;
     background-color: var(--blue);
-    padding: 6.1rem 0;
+    padding: 7rem 0;
 }
 
 .for-what-content{
