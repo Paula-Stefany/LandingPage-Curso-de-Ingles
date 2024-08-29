@@ -1,11 +1,11 @@
 :root{
     --font-poppins: "Poppins", sans-serif;
     --font-roboto: "Roboto", sans-serif;
-    --font-small: 1.4rem;
-    --font-small-medium: 1.8rem;
-    --font-medium: 2rem;
-    --font-large: 6.2rem;
-    --font-body: 1rem;
+    --font-small: 1.8rem;
+    --font-small-medium: 2.2rem;
+    --font-medium: 2.4rem;
+    --font-large: 6.6rem;
+    --font-body: 1.4rem;
     --primary:  #f5f5d9;
     --white: #ffffff;
     --blue: #010158;
@@ -92,7 +92,7 @@ body{
     display: flex;
     width: 85%;
     margin: auto;
-    padding: 7rem 0;
+    padding: 10rem 0;
 }
 
 /* BANNER TEXT */
@@ -192,7 +192,7 @@ body{
 }
 
 .additional-logo{
-    font-size: 28px;
+    font-size: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,11 +214,12 @@ body{
     color: var(--gray);
 }
 
+/* CONTENT */
 .content{
     display: flex;
     width: 85%;
     margin: 0 auto;
-    padding: 7rem 0;
+    padding: 10rem 0;
 }
 
 .content-text{
@@ -256,7 +257,7 @@ body{
 .for-what-section{
     width: 100%;
     background-color: var(--blue);
-    padding: 2.1rem 0;
+    padding: 4.1rem 0;
 }
 
 .for-what-content{
@@ -264,7 +265,7 @@ body{
     background-color: var(--primary);
     display: flex;
     margin: auto;
-    padding: 5rem 3rem;
+    padding: 6rem 3rem;
     border-radius: 2rem;
     justify-content: center;
     
@@ -340,7 +341,7 @@ body{
 .testimonials{
     width: 100%;
     background-color: var(--white);
-    padding: 7rem 0;
+    padding: 10rem 0;
 }
 
 .testimonials-title{
@@ -377,7 +378,7 @@ body{
     flex-direction: column;
     background-color: white;
     box-shadow: 0px 1px 6px var(--light-blue);
-    gap: 1rem
+    gap: 1.3rem
 }
 
 .testimonial-card:hover{
@@ -402,6 +403,7 @@ body{
     text-align: center;
     color: var(--red);
     align-content: center;
+    font-size: 18px;
 }
 
 .last-star{
@@ -760,29 +762,4 @@ body{
         text-align: center;
     }
 
-}
-
-@media only screen and (min-width: 800px) and (max-width: 1000px){
-    :root{
-        --font-large: 5rem;
-    }
-}
-
-@media only screen and (min-width: 1025px){
-    :root{
-        --font-small: 1.5rem;
-        --font-small-medium: 2rem;
-        --font-medium: 2.2rem;
-        --font-large: 6.1rem;
-        --font-body: 1.1rem;
-    }
-
-    .content-text{
-        padding: 3rem 0;
-    }
-
-    .for-what-section{
-        padding: 3rem 0;
-    }
-    
 }
