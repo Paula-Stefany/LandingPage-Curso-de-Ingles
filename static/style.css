@@ -3,8 +3,8 @@
     --font-roboto: "Roboto", sans-serif;
     --font-small: 1.9rem;
     --font-small-medium: 2.3rem;
-    --font-medium: 2.7rem;
-    --font-large: 8rem;
+    --font-medium: 2.8rem;
+    --font-large: 8.5rem;
     --font-body: 1.5rem;
     --primary:  #f5f5d9;
     --white: #ffffff;
@@ -92,7 +92,7 @@ body{
     display: flex;
     width: 85%;
     margin: auto;
-    padding: 13rem 0;
+    padding: 14rem 0;
 }
 
 /* BANNER TEXT */
